@@ -2,34 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Google - ApexPlanet Clone</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ApexPlanet Task 2 - Contact + Dynamic Gallery</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="background"></div>
-  <div class="container">
-    <header>
-      <nav>
-        <a href="#">Gmail</a>
-        <a href="#">Images</a>
-      </nav>
-    </header>
-    <main>
-      <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" class="logo" />
-      <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Search Google or type a URL" />
-        <div class="buttons">
-          <button onclick="search()">Google Search</button>
-          <button onclick="lucky()">I'm Feeling Lucky</button>
-          <button onclick="showPopup()">Click for Internship Info</button>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <p>Intern Project by ApexPlanet</p>
-    </footer>
-  </div>
+  <header>
+    <h1>ApexPlanet Task 2 – Contact Form & Dynamic Image Gallery</h1>
+  </header>
+
+  <!-- Contact Form -->
+  <section class="card form-section">
+    <h2>📩 Contact Form</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <input type="tel" id="phone" placeholder="Your Phone Number" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMsg"></p>
+  </section>
+
+  <!-- Image Gallery -->
+  <section class="card gallery-section">
+    <h2>🖼️ Dynamic Image Gallery</h2>
+    <div class="gallery-input">
+      <input type="text" id="imageUrl" placeholder="Enter image URL (e.g., https://picsum.photos/400/300)">
+      <button id="addBtn" type="button">Add Image</button>
+    </div>
+    <div id="gallery" class="gallery"></div>
+  </section>
+
+  <footer>
+    <p>Internship Project by ApexPlanet</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
