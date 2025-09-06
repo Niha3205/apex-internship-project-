@@ -1,0 +1,115 @@
+/* RESET */
+* {margin:0; padding:0; box-sizing:border-box;}
+
+/* BODY */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg,#89f7fe,#66a6ff);
+  color:#333;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+/* NAVBAR */
+.nav-glass {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.6);
+  padding:14px 30px;
+  position: sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+.nav-inner {display:flex; justify-content:space-between; align-items:center;}
+.brand {font-weight:bold; font-size:18px; color:#004c99;}
+.nav-links a {
+  margin:0 10px; color:#222; text-decoration:none; font-weight:600;
+  padding:6px 10px; border-radius:6px; transition:all 0.3s ease;
+}
+.nav-links a:hover {background:#0066cc; color:#fff;}
+.nav-links a.active {text-decoration:underline; color:#0066cc;}
+
+/* LAYOUT */
+.container {max-width:900px; margin:auto; padding:20px; flex:1;}
+.glass {
+  background:rgba(255,255,255,0.85);
+  border-radius:12px;
+  padding:30px;
+  box-shadow:0 4px 14px rgba(0,0,0,0.1);
+  transition:transform 0.3s;
+}
+.glass:hover {transform:translateY(-2px);}
+.hero {text-align:center; margin-top:40px;}
+.lead {margin:10px 0 20px; font-size:18px; color:#444;}
+
+/* BUTTONS */
+.btn {
+  padding:10px 18px;
+  border:none;
+  border-radius:6px;
+  background:#0066cc;
+  color:#fff;
+  cursor:pointer;
+  transition:all 0.3s ease;
+  text-decoration:none;
+  display:inline-block;
+}
+.btn:hover {background:#004c99; transform:scale(1.05);}
+.btn.ghost {background:#eee; color:#0066cc;}
+.btn.ghost:hover {background:#ddd;}
+
+/* QUIZ PAGE */
+.quiz-page {
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  min-height:70vh;
+  padding-top:40px;
+}
+.quiz-box {
+  max-width:700px;
+  width:100%;
+  background:rgba(255,255,255,0.95);
+  border-radius:12px;
+  padding:30px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.15);
+}
+.qtext {margin:15px 0; font-size:18px; font-weight:500;}
+.choices button {
+  width:100%; margin:10px 0; padding:12px;
+  border-radius:8px; border:1px solid #ccc;
+  background:#fafafa; transition:all 0.3s;
+}
+.choices button:hover {background:#0066cc; color:#fff; transform:scale(1.02);}
+.controls {display:flex; justify-content:space-between; margin-top:15px;}
+/* Score Card */
+.score-card {text-align:center; padding:20px;}
+.score-card h2 {margin-bottom:10px; color:#0066cc;}
+
+/* API */
+.api-output {margin-top:15px; text-align:center;}
+.api-output img {
+  max-width:100%; border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* CONTACT */
+#contactForm input, #contactForm textarea {
+  width:100%; margin:8px 0; padding:12px;
+  border:1px solid #ccc; border-radius:8px;
+  transition:border 0.3s;
+}
+#contactForm input:focus, #contactForm textarea:focus {
+  border:1px solid #0066cc; outline:none;
+}
+
+/* FOOTER */
+.site-footer {
+  margin-top:auto; text-align:center; padding:15px;
+  font-size:14px; background:rgba(255,255,255,0.6);
+  backdrop-filter:blur(10px); color:#333;
+  box-shadow:0 -2px 8px rgba(0,0,0,0.1);
+  border-top:1px solid rgba(0,0,0,0.05);
+  width:100%;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Task 3 — Carousel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav-glass">
+    <div class="nav-inner">
+      <div class="brand">ApexPlanet — Task 3</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="carousel.html" class="active">Carousel</a>
+        <a href="api.html">Dog API</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page container">
+    <section class="glass">
+      <h2>📸 Image Carousel</h2>
+      <div class="carousel-wrap">
+        <button id="prevBtn" class="carousel-nav">❮</button>
+        <div id="carouselViewport" class="carousel-viewport">
+          <div id="carouselTrack" class="carousel-track"></div>
+        </div>
+        <button id="nextBtn" class="carousel-nav">❯</button>
+      </div>
+      <div id="dots" class="dots"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container">Carousel page</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

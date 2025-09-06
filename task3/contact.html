@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Task 3 — Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="nav-glass">
+    <div class="nav-inner">
+      <div class="brand">ApexPlanet — Task 3</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="api.html">Dog API</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact -->
+  <main class="page container">
+    <section class="glass">
+      <h2>📬 Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <p id="formMsg"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    Contact page
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
