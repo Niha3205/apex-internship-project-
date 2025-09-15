@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Movie Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav-glass">
+    <div class="nav-inner container">
+      <div class="brand">MovieExplorer</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="glass">
+      <h2>Contact</h2>
+      <p>If you have feedback or want to connect, drop a message below.</p>
+      <form id="contactForm">
+        <input id="name" type="text" placeholder="Your name" required>
+        <input id="email" type="email" placeholder="Your email" required>
+        <textarea id="message" rows="6" placeholder="Your message" required></textarea>
+        <div class="form-row">
+          <button type="submit" class="btn">Send Message</button>
+          <button type="button" id="clearBtn" class="btn ghost">Clear</button>
+        </div>
+      </form>
+      <p id="formMsg"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2025 MovieExplorer — Built for ApexPlanet Internship
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
